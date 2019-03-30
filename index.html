@@ -6,11 +6,11 @@
     </head>
     <body>
         <div id="mm">
-            <div>我的全名是 {{ firstName + ' ' + lastName }}
-                <div>今年 {{ age }} 岁了.</div>
-                <span>我的名字是{{ firstName }} </span>
-                <div> 我的昵称是 {{ name }}</div>
-            </div>
+        <div>我的全名是 {{ firstName + ' ' + lastName }}
+            <div>今年 {{ age }} 岁了.</div>
+            <span>我的名字是{{ firstName }} </span>
+            <div> 我的昵称是 {{ name }}</div>
+        </div>
             <div style="margin: 20px auto;"> my  full name is  {{ firstName + ' ' + lastName }}
                 <div>I am {{ age }} years old.</div>
                 <span>my name is {{ firstName }} </span>
@@ -94,6 +94,7 @@
                         varTable[value] = []
                     }
                     varTable[value].push(idx)
+                    varTable[value]=[...new Set(varTable[value])]
                     return varTable
                 }
 
@@ -176,6 +177,8 @@
             }
 
             bindViewToData(document.getElementById('mm'), appData);
+      
         </script>
     </body>
 </html>
+
