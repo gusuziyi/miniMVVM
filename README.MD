@@ -1,3 +1,4 @@
+```
 const bindViewToData = (el, data) => {
 
     /*create VM tree Node from real dom
@@ -144,3 +145,4 @@ const bindViewToData = (el, data) => {
     beginListenInput()
     setDataModel(data, nodes)
 }
+```
